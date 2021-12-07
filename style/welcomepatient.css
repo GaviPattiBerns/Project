@@ -1,0 +1,49 @@
+button{
+
+    background-color: rgba(34, 31, 224, 0.3);
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    color:rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    padding: 15px;
+    width: 75vw;
+
+}
+
+button.appButt{
+
+    background-color: rgba(34, 31, 224, 0.3);
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    color:rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    padding: 15px;
+    width: 7vw;
+
+}
+
+div.text{
+    color:rgba(13, 9, 63, 0.659);
+    font-size: 25px;
+    position: relative;
+}
+
+p{
+    position: relative;
+    transform: translate(13%, 100%);
+}
+
+table.appTable{
+    color:rgba(13, 9, 63, 0.659);
+    font-size: 25px;
+    position: relative;
+    border-spacing: 100px;
+    transform: translate(28%, 0%);
+}
+
+div.button{
+    position: relative;
+    transform: translate(12.5%, 300%);
+}

@@ -1,0 +1,65 @@
+<html>
+
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="style/default.css"/>
+        <link rel="stylesheet" href="style/newuser.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>Booking Site Project</h1>
+        </div>
+        
+        <div class="form">
+            <form class="form" id="newUserForm" method="post" enctype="multipart/form-data">
+                <div class="line1">Alberta Personal Health Number: </div><input name="aphn" id="aphn" type="text">
+                <div class="line2">First Name: </div><input name="fname" id="fname" type="text">
+                <div class="line3">Last Name:</div> <input name="lname" id="lname" type="text">  
+                <div class="line4">Email:</div> <input name="email" id="email" type="text">
+                <div class="line5">Date of Birth (yyyy-mm-dd):</div> <input name="dob" id="dob" type="text"><br>
+                <div class="line6">Phone Number:</div> <input name="phone_number" id="phone_number" type="text"><br>
+                <div class="line7">Address:</div> <input name="address" id="address" type="text"><br>
+                <input class="button"type="submit" value="Submit" onclick="submitForm()">
+
+            </form>
+
+        </div>
+
+        <script>
+
+
+            async function submitForm() {
+                const data = {
+                    'aphn': document.querySelector('#aphn').value,
+                    'fname': document.querySelector('#fname').value,
+                    'lname': document.querySelector('#lname').value,
+                    'email': document.querySelector('#email').value,
+                    'dob': document.querySelector('#dob').value,
+                    'phone_number': document.querySelector('#phone_number').value,
+                    'address': document.querySelector('#address').value
+                };
+                
+                const response = await fetch('/api/create_patient.php', {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                console.log(response);
+            }
+            
+        </script>
+
+
+
+
+
+    </body>
+</html>

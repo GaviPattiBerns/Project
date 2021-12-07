@@ -1,0 +1,60 @@
+button{
+
+    background-color: rgba(34, 31, 224, 0.3);
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    color:rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    padding: 15px;
+    width: 75vw;
+
+}
+
+div.appType{
+    color:rgba(13, 9, 63, 0.659);
+    font-size: 25px;
+    position: relative;
+    transform: translate(12%, 10%);  
+}
+
+div.appTime{
+    color:rgba(13, 9, 63, 0.659);
+    font-size: 25px;
+    position: relative;
+    transform: translate(12%, 10%);  
+}
+
+div.location{
+    color:rgba(13, 9, 63, 0.659);
+    font-size: 25px;
+    position: relative;
+    transform: translate(12%, 10%);  
+}
+
+form{
+    color:rgba(13, 9, 63, 0.659);
+    font-size: 25px;
+    position: relative;
+    transform: translate(12%, 10%);  
+}
+
+option{
+    color:rgba(13, 9, 63, 0.659);
+    font-size: 25px;
+    position: relative;
+    transform: translate(12%, 10%);   
+}
+
+select{
+    color:rgba(13, 9, 63, 0.659);
+    font-size: 25px;
+    position: relative;
+    transform: translate(-15%, 10%);
+    width: 75vw;   
+}
+
+div.button{
+    position: relative;
+    transform: translate(12.5%, 200%);
+}

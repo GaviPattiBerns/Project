@@ -1,0 +1,38 @@
+button{
+
+    background-color: rgba(34, 31, 224, 0.3);
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    color:rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    padding: 15px;
+    width: 75vw;
+
+}
+
+div.text{
+    color:rgba(13, 9, 63, 0.659);
+    font-size: 25px;
+    position: relative;
+}
+
+p{
+    position: relative;
+    transform: translate(13%, 100%);
+}
+
+input{
+    background-color: rgba(255,255,255,0.5);
+	width: 75%;
+    height: 7%;
+	font-size: 2vw;
+	color: rgba(13, 9, 63, 0.659);
+    position: relative;
+    transform: translate(17%, 300%);  
+}
+
+div.button{
+    position: relative;
+    transform: translate(12.5%, 500%);
+}
